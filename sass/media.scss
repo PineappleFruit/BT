@@ -5,9 +5,382 @@ $r: 1/16/(750/320);
     @return $px * $r+rem;
 }
 
+.phone_header{
+    padding: 0 r(50);
+    line-height: r(80);
+    background: #fff;
+    min-height: r(80);
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 101;
+}
+.phone_logo{
+    float: left;
+    width: r(167);
+    height: r(44);
+    img{ 
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+.icon_nav{
+    float: right;
+    width: r(60);
+    height: r(80);
+    background-image: url(../images/nav_right.png);
+    background-position: center right;
+    background-size: r(40) r(34);
+}
+.phone_footer{
+    display: none;
+    font-size: r(24);
+    background-color: #3e404c;
+    text-align: center;
+    h3{
+        color: #fff;
+        padding-bottom: r(15);
+    }
+    a{
+        display: block;
+        color: #a1a3af;
+        padding: 0 r(25);
+    }
+}
+.code_phone{
+    width: r(150);
+    height: r(150);
+    margin: 0 auto r(35);
+}
+.fot_company_phone{
+    height: r(88);
+    line-height: r(88);
+    border-top: 1px solid #787a82;
+    color: #a1a3af;
+    font-size: r(20);
+}
+.fot_pro_phone,.fot_about_phone,.fot_code_phone{
+    padding: r(40) r(50) 0;
+    
+}
+.nav_phone_list{
+    position: absolute;
+    z-index: 100;
+    top: r(80);
+    width: r(464);
+    background: #3e404c;
+    right: r(50);
+    border-radius: r(10);
+    padding: 0 r(30);
+    display: none;
+    li{
+        line-height: r(116);
+        &.active{
+            a{
+                color: #2ea39d;
+            }
+        }
+    }
+    a{
+        display: block;
+        color: #fff;
+        font-size: r(24);
+    }
+    &.active{
+        display: block;
+    }
+}
+.icon_arrow_phone{
+    width: r(20);
+    height: r(11);
+    background-image: url(../images/nav_arrow.png);
+}
+.solve_box{
+    a{
+        color: #a1a3af;
+    }
+}
 @media (min-width: 768px) and (max-width: 1200px) {
     
 }
 @media (max-width: 768px) { 
-  
+    .warp{
+        width: auto;
+    }
+    body{
+        min-width: auto;
+    }
+    .header{
+        display: none;
+    }
+    .phone_header{
+        display: block;
+    }
+    .transform_banner{
+        height: r(477);
+    }
+    .index_banner{
+        height: r(477);
+        background-image: url(../images/index_banner_phone.png);
+    }
+    .index_title{
+        h2{
+            font-size: r(36);
+        }
+        h3{
+            font-size: r(30);
+        }
+    }
+    .bt_list{
+        display: block;
+        padding: 0 r(50);
+        height: auto;
+        margin-top: r(55); 
+    }
+    .list_item{
+        padding-bottom: r(70);
+        h4{
+            font-size: r(28);
+        }
+        p{
+            font-size: r(30);
+        }
+    }
+    .bt_solve{
+        padding: 0 r(50);
+        h2{
+            font-size: r(32);
+        }
+    }
+    .solve_info{
+        padding-top: r(155);
+    }
+    .bt_class{
+        margin-bottom: r(40);
+    }
+    
+    .bt_class,.bt_school{
+        float: none;  
+        width: r(650);
+        height: r(448);
+        h4{
+            font-size: r(32);
+            line-height: r(36);
+            margin-bottom: r(15);
+        }
+        p{
+            padding: 0 r(40);
+            font-size: r(24);
+            line-height: r(32);
+        }
+    }
+    .bt_custom{
+        height: r(356);
+        background-image: url(../images/customized_banner.png);  
+    }
+    .custom_info{
+        padding: 0 r(50);
+        h3{
+            font-size: r(32);
+            line-height: r(36);
+        }  
+        p{
+            font-size: r(24);
+            line-height: r(26);
+        } 
+    }
+    .footer{
+        display: none;
+    }
+    .phone_footer{
+        display: block;
+    }
+    .icon_wlw{
+        width: r(80);
+        height: r(90);
+        margin-bottom: r(24);
+        background-image: url(../images/icon_wlw_phone.png);
+    }
+    .icon_dsj{
+        width: r(90);
+        height: r(84);
+        margin-bottom: r(30);
+        background-image: url(../images/icon_dsj_phone.png);
+    }
+    .icon_rgzn{
+        width: r(86);
+        height: r(84);
+        margin-bottom: r(30);
+        background-image: url(../images/icon_rgzn_phone.png);
+    }
+    .fix_hd{
+        padding-top: r(80);
+    }
+    
+    .company_banner{
+        background-image: url(../images/company_banner_phone.png);
+        height: r(380);
+    }
+    .company_info{
+        padding: r(110);
+        h2{
+            font-size: r(36);
+            margin-bottom: r(10);
+            line-height: normal;
+        }
+        h3{
+            font-size: r(30);
+            line-height: normal;
+        }
+    }
+    .company_aboutus{
+        padding: 0 r(50);
+        text-align: center;
+        margin-bottom: r(50);
+        .warp{
+            display: block;
+        }   
+    }
+    .aboutus_pic{
+        margin-right: 0;    
+    }
+    .italic_title{
+        font-size: r(32);
+        margin-top: r(40);
+        &:before{
+            width: r(20);
+            height: r(2);
+            bottom: r(-16);
+            left: 50%;
+            -ms-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+    }
+    .aboutus_txt{
+        margin-top: r(35);
+        h4{
+            font-size: r(32);
+            margin-bottom: r(20);
+        }
+        p{
+            font-size: r(28);
+            line-height: r(38);
+        }
+    }
+    .breaking_news{
+        background-image: url(../images/event_banner_phone.png);
+        height: r(770);   
+        background-size: cover;
+    }
+    .breaking_title{
+        font-size: r(32);
+        margin-top: r(35);
+    }
+    .address_title{
+        font-size: r(32);
+        margin-top: r(35);
+        margin-bottom: r(35);
+    }
+    .event_list{
+        padding: 0 r(50);
+        &:before{
+            content: '';
+            left: r(225);
+            top: r(10);
+        }
+        li{
+            padding: 0 0 r(30) 0 ;
+            width: 100%;
+            &:nth-of-type(even){
+                float: none;
+                &:before{
+                    left: r(166);
+                    content: '';
+                    top: r(10);
+                    width: r(20);
+                    height: r(20);
+                }
+                &:after{
+                    left: r(166);
+                    content: '';
+                    top: r(10);
+                    width: r(20);
+                    height: r(20);
+                }
+            } 
+            .event_time{
+                text-align: left;
+            }
+            &:before{
+                left: r(166);
+                content: '';
+                top: r(10);
+                width: r(20);
+                height: r(20);
+            }
+            &:after{
+                left: r(166);
+                content: '';
+                top: r(10);
+                width: r(20);
+                height: r(20);
+            }
+            
+        }    
+    }
+    .event_box{
+        clear: both;
+        overflow: hidden;
+    }
+    .event_time{
+        float: left;
+        
+        font-size: r(28);
+        width: r(200);
+    }
+    .event_info{
+        float: right;
+        font-size: r(28);
+        line-height: r(38);
+        width: r(450);
+    }
+    .company_address{
+        padding: 0  r(50);
+        text-align: center;
+        .warp{
+            display: block;
+        }   
+    }
+    .address_pic{
+        width: r(650);
+        height: r(500);
+        margin-bottom: r(20);
+    }
+    .company_contact{
+        font-size: r(28);
+        line-height: r(38);
+    }
+    .icon_tel{
+        width: r(28);
+        height: r(28);
+        background-image: url(../images/icon_tel_phone.png);
+    }
+    .icon_email{
+        width: r(28);
+        height: r(23);
+        background-image: url(../images/icon_email_phone.png);
+    }
+    .icon_local{
+       width: r(23);
+       height: r(28);
+       margin-right: r(5);
+       background-image: url(../images/icon_local_phone.png); 
+    }
 }
+
+
