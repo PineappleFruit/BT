@@ -5,7 +5,6 @@ $(function(){
 		var off = false
 		_this.click(function(){
 			off = !off
-			console.log(off)
 			if(index == 0){
 				return
 			}
@@ -28,4 +27,25 @@ $(function(){
 	}
 	
 	//顶部导航
+	var off = false
+	$(".icon_nav").click(function(){
+		off = !off;
+		if(off){
+			$(".nav_phone_list").addClass('active')
+		}else{
+			$(".nav_phone_list").removeClass("active")
+		}
+	});
+	var offChid = false
+	$(".solve_nav").click(function(){
+		offChid = !offChid
+		if(offChid){
+			$(".icon_arrow_phone").addClass('active')
+			$(".solve_box").addClass('active')
+		}else{
+			$(".icon_arrow_phone").removeClass('active')
+			$(".solve_box").removeClass('active')
+		}
+	})
+	
 })

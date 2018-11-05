@@ -64,6 +64,13 @@
     width: 580px;
     color: #fff;
     text-align: center;
+    position: relative;
+    cursor: pointer;
+    a{
+        color: #fff;
+        display: block;
+        height: 100%;
+    }
     h4{
         font-size: 22px;
         line-height: 36px;
@@ -73,12 +80,28 @@
         line-height: 26px;
         padding: 0 100px;
     }
+    &:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        background-color: rgba(46,163,157,0.46);
+        opacity: 0;
+    }
+    &:hover{
+        &:before{
+            content: '';
+            opacity: 1;
+        }
+    }
 }
 .bt_school{
     background-image: url(../images/solve_school.png);
 }
 .solve_info{
     padding-top: 154px;
+    position: relative;
 }
 .bt_custom{
     background-image: url(../images/customized_banner.png);
@@ -276,7 +299,7 @@
 .address_pic{
     width: 700px;
     height: 540px;
-    background-color: #1BD18F;
+    background-color: #fff;
 }
 .class_banner{
     background-image: url(../images/classroom_banner.png);
@@ -332,8 +355,12 @@
 }
 .skill_item{
     height: 300px;
+    border: 1px solid #ebebeb;
+    &:hover{
+        box-shadow: 0 0 18px rgba(9,9,9,0.06);
+        border: 1px solid transparent;
+    }
     
-    box-shadow: 0 0 18px rgba(9,9,9,0.06);
 }
 .skill_txt{
     padding-left: 60px;
@@ -393,7 +420,12 @@
 }
 .companyNews_item{
     margin-bottom: 16px;
+    font-size: 0;
     border: 1px solid #ebebeb;
+    &:hover{
+        box-shadow: 0 0 18px rgba(9,9,9,0.06);
+        border: 1px solid transparent;
+    }
 }
 .companyNews_txt{
     padding-left: 18px;
@@ -432,6 +464,8 @@
         line-height: 20px;
         color: #666;
         padding: 20px 0;
+        word-break: break-all;
+        word-wrap: break-word;
     }
 }
 .news_time{
@@ -447,6 +481,16 @@
 }
 .tendering_info{
     position: relative;
+    text-align: center;
+    color: #fff;
+    h2{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    h3{
+        font-size: 24px;
+        line-height: 36px;
+    }
 }
 .tendering_list{
     
@@ -474,6 +518,17 @@
             padding-right: 40px;
         }
     }
+    tr{
+        &:first-child{
+            &:hover{
+                background-color: #f8f8f8;
+            }
+        }
+        &:hover{
+            background-color: #f4f8f7;
+        }
+        
+    }
     .having{
         color: #60e175;
     }
@@ -493,6 +548,7 @@
 }
 .tendering_item{
     width: 430px;
+    font-size: 0;
     margin-bottom: 24px;
     input{
         width: 100%;
@@ -532,6 +588,10 @@
         padding: 0 15px;
         color: #333;
         font-size: 16px;
+        
+    }
+    input:focus{
+        border: 1px solid #2ea39d;   
     }
     ::-webkit-input-placeholder{
         color: #a9a9a9;
@@ -553,6 +613,7 @@
     color: #fff;
     background-color: #2ea39d;
     text-align: center;
+    font-size: 16px;
     cursor: pointer;
 }
 .send_hd{
@@ -593,15 +654,17 @@
 }
 .work_list{
     border: 1px solid #ebebeb;
-    padding: 0 20px;
+    
     margin-bottom: 15px;
 }
 .work_item{
     cursor: pointer;
     border-top: 1px solid #ebebeb;
     overflow: hidden;
+    padding: 0 20px;
     &:first-child{
         border-top: none;
+        background-color: #f8f8f8;
         .work_title{
             div{
                 font-weight: bold;
@@ -649,5 +712,18 @@
     height: 0;
     h4{
         font-weight: bold;
+    }
+}
+.recruit_info{
+    color: #fff;
+    text-align: center;
+    position: relative;
+    h2{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    h3{
+        font-size: 24px;
+        line-height: 36px;
     }
 }

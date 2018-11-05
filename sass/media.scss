@@ -27,11 +27,12 @@ $r: 1/16/(750/320);
     }
 }
 .icon_nav{
-    float: right;
-    width: r(60);
+    position: absolute;
+    right: 0;
+    width: r(110);
     height: r(80);
     background-image: url(../images/nav_right.png);
-    background-position: center right;
+    background-position: center;
     background-size: r(40) r(34);
 }
 .phone_footer{
@@ -96,10 +97,97 @@ $r: 1/16/(750/320);
     width: r(20);
     height: r(11);
     background-image: url(../images/nav_arrow.png);
+    transform: rotateX(180deg);
+   
+    &.active{
+        transform: rotateX(0);
+        
+    }
+}
+.solve_box{
+    height: 0;
+    overflow: hidden;
+    &.active{
+        height: 100%;
+    }
 }
 .solve_box{
     a{
         color: #a1a3af;
+    }
+}
+.skill_pic_phone{
+    display: none;
+}
+.bt_tendering_phone{
+    display: none;
+}
+.tendering_phone_item{
+    padding: r(40) r(50);
+    border-bottom: 1px solid #ebebeb; 
+    h4{
+        font-size: r(28);
+        line-height: r(36);
+    }
+}
+.having{
+    color: #60e175;
+}
+.tendering_phone_info{
+    font-size: r(28);
+    line-height: r(36);
+    margin:  r(35) 0;
+}
+.tendering_phone_name{
+    padding-right: r(60);
+}
+.tendering_phone_time{
+    font-size: r(24);
+    line-height: r(36);
+}
+.bt_recruit_phone{
+    display: none;
+    ul{
+        border-top: 1px solid #EBEBEB;
+    }
+}
+.recruit_list_item{
+    
+    font-size: r(28);
+    border-bottom: 1px solid #ebebeb;
+    h4{
+        font-weight: bold;
+    }
+    a{
+        display: block;
+        padding: r(25) r(50);
+        color: #666;
+    }
+    
+}
+.recruitInfo_title{
+    padding: r(25) r(50);
+    font-size: r(28);
+    border-bottom: 1px solid #ebebeb;
+}
+.recruitInfo_hd{
+    margin-bottom: r(10);
+    h4{
+        font-weight: bold;
+        padding-right: r(10);
+    }
+}
+.recruitInfo_con{
+    padding: 0  r(50);
+    font-size: r(28);
+    p{
+        word-break: break-all;
+        word-wrap: break-word;
+        margin-bottom: r(25);
+    }
+    h4{
+        font-weight: bold;
+        margin:  r(25) 0;
     }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -380,6 +468,231 @@ $r: 1/16/(750/320);
        height: r(28);
        margin-right: r(5);
        background-image: url(../images/icon_local_phone.png); 
+    }
+    .class_info{
+        padding: 0 r(50);
+        text-align: center;
+        h2{
+            font-size: r(36);
+            line-height: normal;
+        }   
+        h3{
+            font-size: r(30);
+            line-height: normal;
+        }
+    }
+    .class_banner{
+        background-image: url(../images/classroom_banner_phone.png); 
+        height: r(380);  
+    }
+    
+    .icon_ykj{
+        width: r(80);
+        height: r(83);
+        background-image: url(../images/icon_yjx_phone.png);
+        margin-bottom: r(24);
+    }
+    .icon_zntx{
+        width: r(80);
+        height: r(59);
+        background-image: url(../images/icon_zltx_phone.png);
+        margin-bottom: r(48);
+    }
+    .icon_znkz{
+        width: r(80);
+        height: r(69);
+        background-image: url(../images/icon_znkz_phone.png);
+        margin-bottom: r(38);
+    }
+    .icon_spfc{
+        width: r(80);
+        height: r(76);
+        background-image: url(../images/icon_spfc_phone.png);
+        margin-bottom: r(31);
+    }
+    .bt_classroom{
+        padding: 0 r(50);    
+    }
+    .skill_item{
+        display: block;
+    }
+    .skill_pic{
+        display: none;
+    }
+    .skill_pic_phone{
+        display: block;
+        width: r(650);
+        margin: 0 auto;
+    }
+    .skill_txt{
+        padding: 0 r(40);
+        h3{
+            font-size: r(32);
+            line-height: r(36);
+            margin-bottom: r(15);
+            margin-top: r(40);
+        }
+        p{
+            font-size: r(28);
+            line-height: r(36);
+        }
+    }
+    .blue_btn{
+        width: r(160);
+        height: r(50);
+        line-height: r(50);
+        font-size: r(24);
+        margin-bottom: r(44);
+    }
+    .school_banner{
+        background-image: url(../images/school_banner_phone.png);
+        height: r(380);   
+    }
+    .school_info{
+        padding: 0 r(80);
+        text-align: center;
+        h2{
+            font-size: r(36);
+            line-height: normal;
+        }   
+        h3{
+            font-size: r(30);
+            line-height: normal;
+        }
+    }
+    .companyNews_banner{
+        background-image: url(../images/companyNews_banner_phone.png);
+        height: r(240);
+    }
+    .companyNews_info{
+        h2{
+            font-size: r(36);
+        }
+        h3{
+            font-size: r(30);
+        }
+    }
+    .companyNews_box{
+        margin-top: 0;
+    }
+    .companyNews_item{
+        padding: r(35);
+        margin-bottom: 0;
+        border: none;
+        border-bottom: 1px solid #ebebeb;
+    }
+    .companyNews_pic{
+        width: r(238);
+        height: r(170);  
+    }
+    .companyNews_txt{
+        h4{
+            font-size: r(32);
+            line-height: r(36);
+            padding: 0;
+        }
+        p{
+            font-size: r(28);
+            line-height: r(36);
+            margin-bottom: r(25);
+            -webkit-line-clamp: 2;
+        }
+        span{
+            font-size: r(24);
+        }
+    }
+    .bt_page{
+        margin-top: r(40);
+    }
+    .companyNews_bd{
+        border: none;
+        margin-top: 0;
+        margin-bottom: 0;   
+        h3{
+            font-size: r(32);
+            line-height: r(36);
+        }
+        p{
+            padding: r(30) 0;
+            font-size: r(28);
+            line-height: r(36);
+        }
+    }
+    .news_time{
+        font-size: r(24);
+        padding-top: r(10);
+    }
+    .tendering_banner{
+        background-image: url(../images/tendering_banner_banner.png);
+        height: r(240);
+    }
+    .tendering_info{
+        color: #fff;
+        text-align: center;
+        h2{
+            font-size: r(36);
+        }
+        h3{
+            font-size: r(30);
+        }
+    }
+    .bt_tendering{
+        padding: 0 r(50);
+    }
+    .bt_tendering_info{
+        padding: 0 r(50);
+    }
+    .tendering_item{
+        width: 100%;
+        input{
+            height: r(65);
+            line-height: r(65);
+            font-size: r(32);
+        }
+    }
+    .submit_btn{
+        width: r(255);
+        height: r(60);
+        line-height: r(60);
+        margin: 0 auto r(30);
+    }
+    .tendering_title{
+        margin: r(25) 0 r(15);
+        font-size: r(28);
+    }
+    .bt_tendering{
+        display: none;
+    }
+    .bt_tendering_phone{
+        display: block;
+    }
+    .recruit_banner{
+        background-image: url(../images/recruit_banner_phone.png);
+        height: r(240);
+    }
+    .bt_recruit{
+        display: none;
+    }
+    .send_hd{
+        text-align: left;
+        font-size: r(28);
+        line-height: normal;
+    }
+    .bt_recruit_phone{
+        margin:  r(30) 0;
+        display: block;
+        .send_hd{
+            padding:  0  r(50);
+            margin-bottom: r(30);
+        }
+    }
+    .recruit_info{
+        h2{
+            font-size: r(36);
+        }
+        h3{
+            font-size: r(30);
+        }
     }
 }
 

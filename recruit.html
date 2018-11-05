@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,minimum-scale=1.0,user-scalable=0">
 		<title>人才招聘</title>
 		<link rel="stylesheet" href="css/main.css" />
+		<script type="text/javascript" src="js/html-size-calculation.js" ></script>
 	</head>
 	<body class="fix_hd">
 		<div class="header fix_header">
@@ -48,7 +49,28 @@
 				</ul>
 			</div>
 		</div>
-		
+		<div class="phone_header clear">
+			<div class="phone_logo">
+				<img src="images/phone_logo.png"/>
+			</div>
+			<div class="bt_icon icon_nav"></div>
+			<ul class="nav_phone_list">
+				<li><a href="home.html">首页</a></li>
+				<li><a href="company.html">公司介绍</a></li>
+				<li class="solve_list active">
+					<div class="solve_nav ub ub-ac">
+						<a href="javascript:void(0)" class="ub-f1">解决方案</a>
+						<i class="bt_icon icon_arrow_phone"></i>
+					</div>
+					<ul class="solve_box">
+						<li><a href="class.html">E.WROK智慧教室</a></li>
+						<li><a href="school.html">E.WORK智慧校园</a></li>
+					</ul>
+				</li>
+				<li><a href="companyNews.html">企业动态</a></li>
+				<li><a href="tendering.html">招标中心</a></li>
+			</ul>
+		</div>
 		<div class="bt_banner recruit_banner">
 			<div class="warp">
 				<div class="recruit_info text_center">
@@ -65,314 +87,316 @@
 					<div class="recruit_btn">搜索</div>
 				</div>
 				<p class="tx-c send_hd">请将您的简历发送到<span> hr@biantikeji.com</span>，邮件标题格式：<span>【应聘】+职位+姓名</span></p>
-				<div class="work_address ub">
-					<div>工作地点：</div>
-					<ul class="ub ub-ac choose_list">
-						<li class="active">全部</li>
-						<li>成都</li>
-						<li>湖南</li>
+				<div class="bt_recruitInfo">
+					<div class="work_address ub">
+						<div>工作地点：</div>
+						<ul class="ub ub-ac choose_list">
+							<li class="active">全部</li>
+							<li>成都</li>
+							<li>湖南</li>
+						</ul>
+					</div>
+					<div class="work_address ub">
+						<div>工作职位：</div>
+						<ul class="ub ub-ac choose_list">
+							<li class="active">全部</li>
+							<li>软件研发</li>
+							<li>商务市场</li>
+							<li>产品运营</li>
+							<li>智能管理</li>
+						</ul>
+					</div>
+					<ul class="work_list">
+						<li class="work_item">
+							<div class="work_title clear">
+								<div class="work_name">职位名称</div>
+								<div class="work_classify">职位类别</div>
+								<div class="working_address">工作地点</div>
+								<div class="release_time">发布时间</div>
+							</div>
+						</li>
+						<li class="work_item">
+							<div class="work_title">
+								<div class="work_name">前端高级工程师</div>
+								<div class="work_classify">软件开发</div>
+								<div class="working_address">成都</div>
+								<div class="release_timer ub ub-ac">
+									<p class="ub-f1">2018-10-27</p>
+									<i class="bt_icon icon_arrow"></i>
+								</div>
+							</div>
+							<div class="work_info">
+								<h4>职位描述：</h4>
+								<p>1.3年以上web前端开发经验；</p>
+								<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
+								<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
+								<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
+								<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
+								<h4>职位要求：</h4>
+								<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
+								<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
+								<p>3.具备较强的沟通交流、团队合作能力；</p>
+								<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
+								<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
+								<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
+								<p>7.有完整系统管理项目交付经验优先；</p>
+								<p>8.具有优美的审美观 头脑灵活 懂UI</p>
+							</div>
+						</li>
+						<li class="work_item">
+							<div class="work_title">
+								<div class="work_name">前端高级工程师</div>
+								<div class="work_classify">软件开发</div>
+								<div class="working_address">成都</div>
+								<div class="release_timer ub ub-ac">
+									<p class="ub-f1">2018-10-27</p>
+									<i class="bt_icon icon_arrow"></i>
+								</div>
+							</div>
+							<div class="work_info">
+								<h4>职位描述：</h4>
+								<p>1.3年以上web前端开发经验；</p>
+								<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
+								<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
+								<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
+								<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
+								<h4>职位要求：</h4>
+								<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
+								<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
+								<p>3.具备较强的沟通交流、团队合作能力；</p>
+								<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
+								<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
+								<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
+								<p>7.有完整系统管理项目交付经验优先；</p>
+								<p>8.具有优美的审美观 头脑灵活 懂UI</p>
+							</div>
+						</li>
+						<li class="work_item">
+							<div class="work_title">
+								<div class="work_name">前端高级工程师</div>
+								<div class="work_classify">软件开发</div>
+								<div class="working_address">成都</div>
+								<div class="release_timer ub ub-ac">
+									<p class="ub-f1">2018-10-27</p>
+									<i class="bt_icon icon_arrow"></i>
+								</div>
+							</div>
+							<div class="work_info">
+								<h4>职位描述：</h4>
+								<p>1.3年以上web前端开发经验；</p>
+								<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
+								<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
+								<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
+								<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
+								<h4>职位要求：</h4>
+								<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
+								<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
+								<p>3.具备较强的沟通交流、团队合作能力；</p>
+								<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
+								<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
+								<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
+								<p>7.有完整系统管理项目交付经验优先；</p>
+								<p>8.具有优美的审美观 头脑灵活 懂UI</p>
+							</div>
+						</li>
+						<li class="work_item">
+							<div class="work_title">
+								<div class="work_name">前端高级工程师</div>
+								<div class="work_classify">软件开发</div>
+								<div class="working_address">成都</div>
+								<div class="release_timer ub ub-ac">
+									<p class="ub-f1">2018-10-27</p>
+									<i class="bt_icon icon_arrow"></i>
+								</div>
+							</div>
+							<div class="work_info">
+								<h4>职位描述：</h4>
+								<p>1.3年以上web前端开发经验；</p>
+								<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
+								<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
+								<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
+								<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
+								<h4>职位要求：</h4>
+								<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
+								<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
+								<p>3.具备较强的沟通交流、团队合作能力；</p>
+								<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
+								<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
+								<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
+								<p>7.有完整系统管理项目交付经验优先；</p>
+								<p>8.具有优美的审美观 头脑灵活 懂UI</p>
+							</div>
+						</li>
+						<li class="work_item">
+							<div class="work_title">
+								<div class="work_name">前端高级工程师</div>
+								<div class="work_classify">软件开发</div>
+								<div class="working_address">成都</div>
+								<div class="release_timer ub ub-ac">
+									<p class="ub-f1">2018-10-27</p>
+									<i class="bt_icon icon_arrow"></i>
+								</div>
+							</div>
+							<div class="work_info">
+								<h4>职位描述：</h4>
+								<p>1.3年以上web前端开发经验；</p>
+								<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
+								<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
+								<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
+								<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
+								<h4>职位要求：</h4>
+								<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
+								<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
+								<p>3.具备较强的沟通交流、团队合作能力；</p>
+								<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
+								<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
+								<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
+								<p>7.有完整系统管理项目交付经验优先；</p>
+								<p>8.具有优美的审美观 头脑灵活 懂UI</p>
+							</div>
+						</li>
+						<li class="work_item">
+							<div class="work_title">
+								<div class="work_name">前端高级工程师</div>
+								<div class="work_classify">软件开发</div>
+								<div class="working_address">成都</div>
+								<div class="release_timer ub ub-ac">
+									<p class="ub-f1">2018-10-27</p>
+									<i class="bt_icon icon_arrow"></i>
+								</div>
+							</div>
+							<div class="work_info">
+								<h4>职位描述：</h4>
+								<p>1.3年以上web前端开发经验；</p>
+								<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
+								<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
+								<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
+								<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
+								<h4>职位要求：</h4>
+								<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
+								<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
+								<p>3.具备较强的沟通交流、团队合作能力；</p>
+								<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
+								<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
+								<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
+								<p>7.有完整系统管理项目交付经验优先；</p>
+								<p>8.具有优美的审美观 头脑灵活 懂UI</p>
+							</div>
+						</li>
+						<li class="work_item">
+							<div class="work_title">
+								<div class="work_name">前端高级工程师</div>
+								<div class="work_classify">软件开发</div>
+								<div class="working_address">成都</div>
+								<div class="release_timer ub ub-ac">
+									<p class="ub-f1">2018-10-27</p>
+									<i class="bt_icon icon_arrow"></i>
+								</div>
+							</div>
+							<div class="work_info">
+								<h4>职位描述：</h4>
+								<p>1.3年以上web前端开发经验；</p>
+								<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
+								<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
+								<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
+								<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
+								<h4>职位要求：</h4>
+								<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
+								<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
+								<p>3.具备较强的沟通交流、团队合作能力；</p>
+								<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
+								<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
+								<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
+								<p>7.有完整系统管理项目交付经验优先；</p>
+								<p>8.具有优美的审美观 头脑灵活 懂UI</p>
+							</div>
+						</li>
+						<li class="work_item">
+							<div class="work_title">
+								<div class="work_name">前端高级工程师</div>
+								<div class="work_classify">软件开发</div>
+								<div class="working_address">成都</div>
+								<div class="release_timer ub ub-ac">
+									<p class="ub-f1">2018-10-27</p>
+									<i class="bt_icon icon_arrow"></i>
+								</div>
+							</div>
+							<div class="work_info">
+								<h4>职位描述：</h4>
+								<p>1.3年以上web前端开发经验；</p>
+								<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
+								<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
+								<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
+								<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
+								<h4>职位要求：</h4>
+								<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
+								<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
+								<p>3.具备较强的沟通交流、团队合作能力；</p>
+								<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
+								<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
+								<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
+								<p>7.有完整系统管理项目交付经验优先；</p>
+								<p>8.具有优美的审美观 头脑灵活 懂UI</p>
+							</div>
+						</li>
+						<li class="work_item">
+							<div class="work_title">
+								<div class="work_name">前端高级工程师</div>
+								<div class="work_classify">软件开发</div>
+								<div class="working_address">成都</div>
+								<div class="release_timer ub ub-ac">
+									<p class="ub-f1">2018-10-27</p>
+									<i class="bt_icon icon_arrow"></i>
+								</div>
+							</div>
+							<div class="work_info">
+								<h4>职位描述：</h4>
+								<p>1.3年以上web前端开发经验；</p>
+								<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
+								<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
+								<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
+								<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
+								<h4>职位要求：</h4>
+								<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
+								<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
+								<p>3.具备较强的沟通交流、团队合作能力；</p>
+								<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
+								<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
+								<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
+								<p>7.有完整系统管理项目交付经验优先；</p>
+								<p>8.具有优美的审美观 头脑灵活 懂UI</p>
+							</div>
+						</li>
+						<li class="work_item">
+							<div class="work_title">
+								<div class="work_name">前端高级工程师</div>
+								<div class="work_classify">软件开发</div>
+								<div class="working_address">成都</div>
+								<div class="release_timer ub ub-ac">
+									<p class="ub-f1">2018-10-27</p>
+									<i class="bt_icon icon_arrow"></i>
+								</div>
+							</div>
+							<div class="work_info">
+								<h4>职位描述：</h4>
+								<p>1.3年以上web前端开发经验；</p>
+								<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
+								<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
+								<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
+								<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
+								<h4>职位要求：</h4>
+								<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
+								<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
+								<p>3.具备较强的沟通交流、团队合作能力；</p>
+								<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
+								<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
+								<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
+								<p>7.有完整系统管理项目交付经验优先；</p>
+								<p>8.具有优美的审美观 头脑灵活 懂UI</p>
+							</div>
+						</li>
 					</ul>
 				</div>
-				<div class="work_address ub">
-					<div>工作职位：</div>
-					<ul class="ub ub-ac choose_list">
-						<li class="active">全部</li>
-						<li>软件研发</li>
-						<li>商务市场</li>
-						<li>产品运营</li>
-						<li>智能管理</li>
-					</ul>
-				</div>
-				<ul class="work_list">
-					<li class="work_item">
-						<div class="work_title clear">
-							<div class="work_name">职位名称</div>
-							<div class="work_classify">职位类别</div>
-							<div class="working_address">工作地点</div>
-							<div class="release_time">发布时间</div>
-						</div>
-					</li>
-					<li class="work_item">
-						<div class="work_title">
-							<div class="work_name">前端高级工程师</div>
-							<div class="work_classify">软件开发</div>
-							<div class="working_address">成都</div>
-							<div class="release_timer ub ub-ac">
-								<p class="ub-f1">2018-10-27</p>
-								<i class="bt_icon icon_arrow"></i>
-							</div>
-						</div>
-						<div class="work_info">
-							<h4>职位描述：</h4>
-							<p>1.3年以上web前端开发经验；</p>
-							<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
-							<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
-							<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
-							<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
-							<h4>职位要求：</h4>
-							<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
-							<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
-							<p>3.具备较强的沟通交流、团队合作能力；</p>
-							<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
-							<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
-							<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
-							<p>7.有完整系统管理项目交付经验优先；</p>
-							<p>8.具有优美的审美观 头脑灵活 懂UI</p>
-						</div>
-					</li>
-					<li class="work_item">
-						<div class="work_title">
-							<div class="work_name">前端高级工程师</div>
-							<div class="work_classify">软件开发</div>
-							<div class="working_address">成都</div>
-							<div class="release_timer ub ub-ac">
-								<p class="ub-f1">2018-10-27</p>
-								<i class="bt_icon icon_arrow"></i>
-							</div>
-						</div>
-						<div class="work_info">
-							<h4>职位描述：</h4>
-							<p>1.3年以上web前端开发经验；</p>
-							<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
-							<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
-							<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
-							<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
-							<h4>职位要求：</h4>
-							<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
-							<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
-							<p>3.具备较强的沟通交流、团队合作能力；</p>
-							<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
-							<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
-							<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
-							<p>7.有完整系统管理项目交付经验优先；</p>
-							<p>8.具有优美的审美观 头脑灵活 懂UI</p>
-						</div>
-					</li>
-					<li class="work_item">
-						<div class="work_title">
-							<div class="work_name">前端高级工程师</div>
-							<div class="work_classify">软件开发</div>
-							<div class="working_address">成都</div>
-							<div class="release_timer ub ub-ac">
-								<p class="ub-f1">2018-10-27</p>
-								<i class="bt_icon icon_arrow"></i>
-							</div>
-						</div>
-						<div class="work_info">
-							<h4>职位描述：</h4>
-							<p>1.3年以上web前端开发经验；</p>
-							<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
-							<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
-							<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
-							<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
-							<h4>职位要求：</h4>
-							<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
-							<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
-							<p>3.具备较强的沟通交流、团队合作能力；</p>
-							<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
-							<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
-							<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
-							<p>7.有完整系统管理项目交付经验优先；</p>
-							<p>8.具有优美的审美观 头脑灵活 懂UI</p>
-						</div>
-					</li>
-					<li class="work_item">
-						<div class="work_title">
-							<div class="work_name">前端高级工程师</div>
-							<div class="work_classify">软件开发</div>
-							<div class="working_address">成都</div>
-							<div class="release_timer ub ub-ac">
-								<p class="ub-f1">2018-10-27</p>
-								<i class="bt_icon icon_arrow"></i>
-							</div>
-						</div>
-						<div class="work_info">
-							<h4>职位描述：</h4>
-							<p>1.3年以上web前端开发经验；</p>
-							<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
-							<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
-							<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
-							<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
-							<h4>职位要求：</h4>
-							<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
-							<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
-							<p>3.具备较强的沟通交流、团队合作能力；</p>
-							<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
-							<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
-							<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
-							<p>7.有完整系统管理项目交付经验优先；</p>
-							<p>8.具有优美的审美观 头脑灵活 懂UI</p>
-						</div>
-					</li>
-					<li class="work_item">
-						<div class="work_title">
-							<div class="work_name">前端高级工程师</div>
-							<div class="work_classify">软件开发</div>
-							<div class="working_address">成都</div>
-							<div class="release_timer ub ub-ac">
-								<p class="ub-f1">2018-10-27</p>
-								<i class="bt_icon icon_arrow"></i>
-							</div>
-						</div>
-						<div class="work_info">
-							<h4>职位描述：</h4>
-							<p>1.3年以上web前端开发经验；</p>
-							<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
-							<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
-							<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
-							<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
-							<h4>职位要求：</h4>
-							<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
-							<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
-							<p>3.具备较强的沟通交流、团队合作能力；</p>
-							<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
-							<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
-							<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
-							<p>7.有完整系统管理项目交付经验优先；</p>
-							<p>8.具有优美的审美观 头脑灵活 懂UI</p>
-						</div>
-					</li>
-					<li class="work_item">
-						<div class="work_title">
-							<div class="work_name">前端高级工程师</div>
-							<div class="work_classify">软件开发</div>
-							<div class="working_address">成都</div>
-							<div class="release_timer ub ub-ac">
-								<p class="ub-f1">2018-10-27</p>
-								<i class="bt_icon icon_arrow"></i>
-							</div>
-						</div>
-						<div class="work_info">
-							<h4>职位描述：</h4>
-							<p>1.3年以上web前端开发经验；</p>
-							<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
-							<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
-							<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
-							<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
-							<h4>职位要求：</h4>
-							<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
-							<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
-							<p>3.具备较强的沟通交流、团队合作能力；</p>
-							<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
-							<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
-							<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
-							<p>7.有完整系统管理项目交付经验优先；</p>
-							<p>8.具有优美的审美观 头脑灵活 懂UI</p>
-						</div>
-					</li>
-					<li class="work_item">
-						<div class="work_title">
-							<div class="work_name">前端高级工程师</div>
-							<div class="work_classify">软件开发</div>
-							<div class="working_address">成都</div>
-							<div class="release_timer ub ub-ac">
-								<p class="ub-f1">2018-10-27</p>
-								<i class="bt_icon icon_arrow"></i>
-							</div>
-						</div>
-						<div class="work_info">
-							<h4>职位描述：</h4>
-							<p>1.3年以上web前端开发经验；</p>
-							<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
-							<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
-							<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
-							<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
-							<h4>职位要求：</h4>
-							<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
-							<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
-							<p>3.具备较强的沟通交流、团队合作能力；</p>
-							<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
-							<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
-							<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
-							<p>7.有完整系统管理项目交付经验优先；</p>
-							<p>8.具有优美的审美观 头脑灵活 懂UI</p>
-						</div>
-					</li>
-					<li class="work_item">
-						<div class="work_title">
-							<div class="work_name">前端高级工程师</div>
-							<div class="work_classify">软件开发</div>
-							<div class="working_address">成都</div>
-							<div class="release_timer ub ub-ac">
-								<p class="ub-f1">2018-10-27</p>
-								<i class="bt_icon icon_arrow"></i>
-							</div>
-						</div>
-						<div class="work_info">
-							<h4>职位描述：</h4>
-							<p>1.3年以上web前端开发经验；</p>
-							<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
-							<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
-							<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
-							<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
-							<h4>职位要求：</h4>
-							<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
-							<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
-							<p>3.具备较强的沟通交流、团队合作能力；</p>
-							<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
-							<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
-							<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
-							<p>7.有完整系统管理项目交付经验优先；</p>
-							<p>8.具有优美的审美观 头脑灵活 懂UI</p>
-						</div>
-					</li>
-					<li class="work_item">
-						<div class="work_title">
-							<div class="work_name">前端高级工程师</div>
-							<div class="work_classify">软件开发</div>
-							<div class="working_address">成都</div>
-							<div class="release_timer ub ub-ac">
-								<p class="ub-f1">2018-10-27</p>
-								<i class="bt_icon icon_arrow"></i>
-							</div>
-						</div>
-						<div class="work_info">
-							<h4>职位描述：</h4>
-							<p>1.3年以上web前端开发经验；</p>
-							<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
-							<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
-							<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
-							<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
-							<h4>职位要求：</h4>
-							<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
-							<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
-							<p>3.具备较强的沟通交流、团队合作能力；</p>
-							<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
-							<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
-							<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
-							<p>7.有完整系统管理项目交付经验优先；</p>
-							<p>8.具有优美的审美观 头脑灵活 懂UI</p>
-						</div>
-					</li>
-					<li class="work_item">
-						<div class="work_title">
-							<div class="work_name">前端高级工程师</div>
-							<div class="work_classify">软件开发</div>
-							<div class="working_address">成都</div>
-							<div class="release_timer ub ub-ac">
-								<p class="ub-f1">2018-10-27</p>
-								<i class="bt_icon icon_arrow"></i>
-							</div>
-						</div>
-						<div class="work_info">
-							<h4>职位描述：</h4>
-							<p>1.3年以上web前端开发经验；</p>
-							<p>2.精通web及前端技术(HTML5,JavaScript,AJAX,JSON,Webpack,ES6)等技术；</p>
-							<p>3.精通前端 面向对象开发，具有主流框架开发经验，如AngularJS,React,Vue.js,Nodejs(必须)等；</p>
-							<p>4.了解前端架构设计理念，熟悉使用前端架构体系，有实际前端系统架构设计经验者优先；</p>
-							<p>5.有良好得编码习惯，能够改善代码规范，降低软件维护成本；</p>
-							<h4>职位要求：</h4>
-							<p>1.有较强的逻辑思考能力、数据分析能力，善于从多角度发现问题并思考总结；  </p>
-							<p>2.优秀的需求挖掘能力，能准确把用户需求转化成产品需求；</p>
-							<p>3.具备较强的沟通交流、团队合作能力；</p>
-							<p>4.懂技术原理，能高效的和研发人员沟通，并推进产品研发；</p>
-							<p>5.思路清晰，较强的文字和口头表达能力，可流利的讲解或演示产品；</p>
-							<p>6.一年以上管理系统产品设计经验，需要有项目展示(最好携带文档及原型演示)；</p>
-							<p>7.有完整系统管理项目交付经验优先；</p>
-							<p>8.具有优美的审美观 头脑灵活 懂UI</p>
-						</div>
-					</li>
-				</ul>
 				<div class="bt_page ub ub-pac">
 					<span>&lt;</span>
 					<span>1</span>
@@ -383,6 +407,94 @@
 					<input type="text" name="" id="" value="" />
 					<span>页</span>
 				</div>
+			</div>
+		</div>
+		
+		<div class="bt_recruit_phone">
+			<p class="tx-c send_hd">请将您的简历发送到<span> hr@biantikeji.com</span>，邮件标题格式：<span>【应聘】+职位+姓名</span></p>
+			<ul>
+				<li class="recruit_list_item">
+					<a href="recruitInfo.html">
+						<div class="ub ub-ac recruitInfo_hd">
+							<h4 class="ub-f1">前端高级工程师</h4>
+							<p>2018年6月11日</p>
+						</div>
+						<div class="ub ub-ac">
+							<p class="ub-f1">软件开发</p>
+							<p>成都</p>
+						</div>
+					</a>
+				</li>
+				<li class="recruit_list_item">
+					<a href="recruitInfo.html">
+						<div class="ub ub-ac">
+							<h4 class="ub-f1">前端高级工程师</h4>
+							<p>2018年6月11日</p>
+						</div>
+						<div class="ub ub-ac">
+							<p class="ub-f1">软件开发</p>
+							<p>成都</p>
+						</div>
+					</a>
+				</li>
+				<li class="recruit_list_item">
+					<a href="recruitInfo.html">
+						<div class="ub ub-ac">
+							<h4 class="ub-f1">前端高级工程师</h4>
+							<p>2018年6月11日</p>
+						</div>
+						<div class="ub ub-ac">
+							<p class="ub-f1">软件开发</p>
+							<p>成都</p>
+						</div>
+					</a>
+				</li>
+				<li class="recruit_list_item">
+					<a href="recruitInfo.html">
+						<div class="ub ub-ac">
+							<h4 class="ub-f1">前端高级工程师</h4>
+							<p>2018年6月11日</p>
+						</div>
+						<div class="ub ub-ac">
+							<p class="ub-f1">软件开发</p>
+							<p>成都</p>
+						</div>
+					</a>
+				</li>
+				<li class="recruit_list_item">
+					<a href="recruitInfo.html">
+						<div class="ub ub-ac">
+							<h4 class="ub-f1">前端高级工程师</h4>
+							<p>2018年6月11日</p>
+						</div>
+						<div class="ub ub-ac">
+							<p class="ub-f1">软件开发</p>
+							<p>成都</p>
+						</div>
+					</a>
+				</li>
+				<li class="recruit_list_item">
+					<a href="recruitInfo.html">
+						<div class="ub ub-ac">
+							<h4 class="ub-f1">前端高级工程师</h4>
+							<p>2018年6月11日</p>
+						</div>
+						<div class="ub ub-ac">
+							<p class="ub-f1">软件开发</p>
+							<p>成都</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="bt_page ub ub-pac">
+				<span>&lt;</span>
+				<span>1</span>
+				<span>...</span>
+				<span>10</span>
+				<span>&gt;</span>
+				<span>前往</span>
+				<input type="text" name="" id="" value="" />
+				<span>页</span>
 			</div>
 		</div>
 		
@@ -411,6 +523,30 @@
 				</div>
 				<div class="fot_company">Copyright © 2018 四川变体科技有限公司<span class="pl10">蜀ICP备15008394号-1</span></div>
 			</div>
+		</footer>
+		<footer class="phone_footer">
+			<div class="fot_pro_phone">
+				<h3>产品</h3>
+				<div class="ub ub-pac">
+					<div><a href="class.html">E.WORK智慧教室</a></div>
+					<div><a href="school.html">E.WORK智慧校园</a></div>
+				</div>
+			</div>
+			<div class="fot_about_phone">
+				<h3>关于我们</h3>
+				<div class="ub ub-pac">
+					<div><a href="company.html">公司介绍</a></div>
+					<div><a href="#">联系我们</a></div>
+					<div><a href="recruit.html">人才招聘</a></div>
+				</div>
+			</div>
+			<div class="fot_code_phone">
+				<h3>微信公众号</h3>
+				<div class="code_phone">
+					<img src="images/code_phone.png" alt="" />
+				</div>
+			</div>
+			<div class="fot_company_phone">Copyright © 2018 四川变体科技有限公司</div>
 		</footer>
 		<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
 		<script type="text/javascript" src="js/main.js" ></script>
