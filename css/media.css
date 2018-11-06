@@ -89,9 +89,10 @@
   overflow: hidden; }
   .solve_box.active {
     height: 100%; }
-
-.solve_box a {
-  color: #a1a3af; }
+  .solve_box li a {
+    color: #a1a3af !important; }
+  .solve_box li.active a {
+    color: #2ea39d !important; }
 
 .skill_pic_phone {
   display: none; }
@@ -179,7 +180,8 @@
     background-image: url(../images/index_banner_phone.png); }
 
   .index_title h2 {
-    font-size: 0.96rem; }
+    font-size: 0.96rem;
+    margin-bottom: 0; }
   .index_title h3 {
     font-size: 0.8rem; }
 
@@ -190,14 +192,14 @@
     margin-top: 1.4666666667rem; }
 
   .list_item {
-    padding-bottom: 1.8666666667rem; }
+    padding: 0 0 1.8666666667rem; }
     .list_item h4 {
       font-size: 0.7466666667rem; }
     .list_item p {
       font-size: 0.8rem; }
 
   .bt_solve {
-    padding: 0 1.3333333333rem; }
+    padding: 0.8rem 1.3333333333rem 0; }
     .bt_solve h2 {
       font-size: 0.8533333333rem; }
 
@@ -605,4 +607,12 @@
   .recruit_info h2 {
     font-size: 0.96rem; }
   .recruit_info h3 {
-    font-size: 0.8rem; } }
+    font-size: 0.8rem; }
+
+  .companyNews_pic {
+    width: 6.3466666667rem;
+    height: 4.5333333333rem;
+    overflow: hidden; }
+    .companyNews_pic img {
+      width: 100%;
+      min-height: 4.5333333333rem; } }

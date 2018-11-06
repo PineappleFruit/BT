@@ -110,10 +110,15 @@ $r: 1/16/(750/320);
     &.active{
         height: 100%;
     }
-}
-.solve_box{
-    a{
-        color: #a1a3af;
+    li{
+        a{
+            color: #a1a3af !important;
+        }
+        &.active{
+            a{
+                color: #2ea39d !important;
+            }
+        }
     }
 }
 .skill_pic_phone{
@@ -216,6 +221,7 @@ $r: 1/16/(750/320);
     .index_title{
         h2{
             font-size: r(36);
+            margin-bottom: 0;
         }
         h3{
             font-size: r(30);
@@ -228,7 +234,7 @@ $r: 1/16/(750/320);
         margin-top: r(55); 
     }
     .list_item{
-        padding-bottom: r(70);
+        padding: 0 0 r(70);
         h4{
             font-size: r(28);
         }
@@ -237,7 +243,7 @@ $r: 1/16/(750/320);
         }
     }
     .bt_solve{
-        padding: 0 r(50);
+        padding: r(30) r(50) 0;
         h2{
             font-size: r(32);
         }
@@ -692,6 +698,15 @@ $r: 1/16/(750/320);
         }
         h3{
             font-size: r(30);
+        }
+    }
+    .companyNews_pic{
+        width: r(238);
+        height: r(170);
+        overflow: hidden;
+        img{
+            width: 100%;
+            min-height: r(170);
         }
     }
 }

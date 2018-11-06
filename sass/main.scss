@@ -6,6 +6,7 @@ body{
     background: #fff;
     min-width: 1200px;
     position: relative;
+    font-size: 0;
 }
 .warp{
     width: 1200px;
@@ -47,6 +48,13 @@ a{
         li{
             a{
                 color: #fff;
+            }
+        }
+    }
+    .popup-box{
+        li{
+            a{
+                color: #333;
             }
         }
     }
@@ -97,17 +105,14 @@ a{
         a{
             display: block;
             font-size: 14px;
-            color: #333333;;
+            color: #333333;
         }
         &.active{
-            a{
+            >a{
                 color: #2ea39d;
             }
         }
         &:hover{
-            a{
-                color: #2ea39d;
-            }
             .popup-box{
                 opacity: 1;
                 -webkit-transform: translateX(-50%) scale(1);
@@ -223,6 +228,7 @@ a{
     font-size: 14px;
     span{
         padding: 0 15px;
+        cursor: pointer;
     }
     input{
         width: 45px;
@@ -279,6 +285,9 @@ a{
             span{
                 color: #2ea39d;
             }
+            a{
+                color: #2ea39d;
+            }
         }
         &:last-child{
             border-bottom: none;
@@ -286,6 +295,11 @@ a{
         span{
             font-size: 14px;
             color: #333;
+        }
+        &.active{
+            a{
+                color: #2ea39d;
+            }
         }
     }
 }

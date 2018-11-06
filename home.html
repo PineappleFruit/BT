@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,minimum-scale=1.0,user-scalable=0">
 		<title>首页</title>
 		<link rel="stylesheet" href="css/main.css" />
+		<link rel="icon" href="images/bt.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="images/bt.ico" type="image/x-icon"/>
 		<script type="text/javascript" src="js/html-size-calculation.js" ></script>
 	</head>
 	<body>
@@ -26,14 +28,10 @@
 							<div class="nav-popup">
 								<ul class="nav-popup-list">
 									<li class="pro1">
-										<a href="class.html">
-											<span class="">E.WROK智慧教室</span>
-										</a>
+										<a href="class.html">E.WROK智慧教室</a>
 									</li>
 									<li class="pro2">
-										<a href="school.html">
-											<span class="">E.WORK智慧校园</span>
-										</a>
+										<a href="school.html">E.WORK智慧校园</a>
 									</li>
 								</ul>
 								<span class="cart"></span>
@@ -77,15 +75,15 @@
 			<div class="index_banner bt_banner"></div>
 			<div class="warp">
 				<div class="index_title text_center">
-					<h2>科技无处不在</h2>
-					<h3>致力创新科技  驱动世界变体</h3>
+					<h2 data-scroll-reveal="enter from the bottom after 0.5s">科技无处不在</h2>
+					<h3 data-scroll-reveal="enter from the bottom after 0.8s">致力创新科技  驱动世界变体</h3>
 				</div>
 			</div>
 		</div>
 		
 		
 		<div class="warp list_box">
-			<ul	 class="bt_list ub ub-pac">
+			<ul	 class="bt_list ub">
 				<li class="list_item">
 					<div class="bt_icon icon_wlw"></div>
 					<h4>物联网 </h4>
@@ -116,10 +114,12 @@
 						</a>
 					</div>
 					<div class="fr bt_school">
-						<div class="solve_info">
-							<h4>E.WORK智慧校园</h4>
-							<p>通过技术使学校的物理空间和信息空间产生互联，从 对学生各方面的分析，以及校园的管理等方面来提升 校园的运作。</p>
-						</div>
+						<a href="school.html">
+							<div class="solve_info">
+								<h4>E.WORK智慧校园</h4>
+								<p>通过技术使学校的物理空间和信息空间产生互联，从 对学生各方面的分析，以及校园的管理等方面来提升 校园的运作。</p>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -145,7 +145,7 @@
 					<div class="fot_aboutus ub-f1 tx-c">
 						<p class="fot_title">关于我们</p>
 						<p><a href="company.html">公司介绍</a></p>
-						<p><a href="#">联系我们</a></p>
+						<p><a href="company.html#aboutUs">联系我们</a></p>
 						<p><a href="recruit.html">人才招聘</a></p>
 					</div>
 					<div class="ub-f1">
@@ -173,7 +173,7 @@
 				<h3>关于我们</h3>
 				<div class="ub ub-pac">
 					<div><a href="company.html">公司介绍</a></div>
-					<div><a href="#">联系我们</a></div>
+					<div><a href="company.html#aboutUs">联系我们</a></div>
 					<div><a href="recruit.html">人才招聘</a></div>
 				</div>
 			</div>
@@ -187,6 +187,10 @@
 		</footer>
 		
 		<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="js/scrollReveal.min.js" ></script>
 		<script type="text/javascript" src="js/main.js" ></script>
+		<script>
+			window.scrollReveal = new scrollReveal();
+		</script>
 	</body>
 </html>

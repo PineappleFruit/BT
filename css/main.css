@@ -1230,10 +1230,10 @@ table {
     line-height: 36px; }
 
 .bt_list {
-  height: 394px; }
+  height: 324px; }
 
 .list_item {
-  padding: 0 60px;
+  padding: 88px 60px 0;
   text-align: center; }
   .list_item h4 {
     font-size: 18px;
@@ -1262,7 +1262,9 @@ table {
   margin: 0 auto 23px; }
 
 .bt_solve {
-  margin-bottom: 50px; }
+  height: 580px;
+  background: #f8f8f8;
+  padding-top: 70px; }
   .bt_solve h2 {
     font-size: 24px;
     color: #333333;
@@ -1297,7 +1299,8 @@ table {
     height: 100%;
     left: 0;
     background-color: rgba(46, 163, 157, 0.46);
-    opacity: 0; }
+    opacity: 0;
+    transition: all 0.6s; }
   .bt_class:hover:before, .bt_school:hover:before {
     content: '';
     opacity: 1; }
@@ -1345,7 +1348,8 @@ table {
     line-height: 36px; }
 
 .company_aboutus {
-  margin: 60px 0; }
+  margin: 60px 0;
+  font-size: 0; }
 
 .aboutus_pic {
   margin-right: 54px; }
@@ -1497,7 +1501,8 @@ table {
 .class_info {
   position: relative;
   color: #FFFFFF;
-  padding-left: 100px; }
+  padding-left: 100px;
+  padding-right: 350px; }
   .class_info h2 {
     font-size: 30px;
     line-height: 36px;
@@ -1542,8 +1547,18 @@ table {
   height: 300px;
   border: 1px solid #ebebeb; }
   .skill_item:hover {
-    box-shadow: 0 0 18px rgba(9, 9, 9, 0.06);
-    border: 1px solid transparent; }
+    box-shadow: 0 0 30px rgba(9, 9, 9, 0.1); }
+    .skill_item:hover .skill_pic img {
+      transform: scale(1.02); }
+
+.skill_pic {
+  width: 470px;
+  height: 300px;
+  overflow: hidden; }
+  .skill_pic img {
+    width: 100%;
+    min-height: 300px;
+    transition: all 0.6s; }
 
 .skill_txt {
   padding-left: 60px;
@@ -1567,7 +1582,8 @@ table {
 
 .school_info {
   position: relative;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  padding-right: 600px; }
   .school_info h2 {
     font-size: 30px;
     line-height: 36px;
@@ -1599,8 +1615,7 @@ table {
   font-size: 0;
   border: 1px solid #ebebeb; }
   .companyNews_item:hover {
-    box-shadow: 0 0 18px rgba(9, 9, 9, 0.06);
-    border: 1px solid transparent; }
+    box-shadow: 0 0 30px rgba(9, 9, 9, 0.1); }
 
 .companyNews_txt {
   padding-left: 18px;
@@ -1638,6 +1653,15 @@ table {
     word-break: break-all;
     word-wrap: break-word; }
 
+.companyNews_pic {
+  width: 226px;
+  height: 168px;
+  overflow: hidden; }
+  .companyNews_pic img {
+    width: 100%;
+    min-height: 168px;
+    transition: all 0.6s; }
+
 .news_time {
   font-size: 12px;
   line-height: 20px;
@@ -1672,22 +1696,32 @@ table {
 .tendering_list td, .tendering_list th {
   height: 60px;
   line-height: 60px;
-  padding-left: 40px;
   font-size: 14px;
   line-height: 28px;
   color: #333;
-  border-bottom: 1px solid #ebebeb; }
-  .tendering_list td:last-child, .tendering_list th:last-child {
-    padding-left: 0;
-    padding-right: 40px; }
+  border-bottom: 1px solid #ebebeb;
+  padding: 0 10px; }
 .tendering_list tr:first-child:hover {
   background-color: #f8f8f8; }
 .tendering_list tr:hover {
   background-color: #f4f8f7; }
+.tendering_list tr td:first-child {
+  text-align: center; }
 .tendering_list .having {
   color: #60e175; }
 .tendering_list .details {
   color: #2ea39d; }
+.tendering_list .tendering_number {
+  width: 135px;
+  text-align: center; }
+.tendering_list .tendering_name {
+  width: 350px; }
+.tendering_list .tendering_category {
+  width: 115px; }
+.tendering_list .tendering_state {
+  width: 150px; }
+.tendering_list .tendering_time {
+  width: 365px; }
 
 .tendering_title {
   margin: 25px 0 15px;
@@ -1853,7 +1887,8 @@ table {
 body {
   background: #fff;
   min-width: 1200px;
-  position: relative; }
+  position: relative;
+  font-size: 0; }
 
 .warp {
   width: 1200px;
@@ -1892,6 +1927,8 @@ a {
   position: absolute; }
   .index_header .bt_nav li a {
     color: #fff; }
+  .index_header .popup-box li a {
+    color: #333; }
 
 .bt_banner {
   background-repeat: no-repeat;
@@ -1936,9 +1973,7 @@ a {
     display: block;
     font-size: 14px;
     color: #333333; }
-  .bt_nav li.active a {
-    color: #2ea39d; }
-  .bt_nav li:hover a {
+  .bt_nav li.active > a {
     color: #2ea39d; }
   .bt_nav li:hover .popup-box {
     opacity: 1;
@@ -2049,7 +2084,8 @@ a {
   color: #333;
   font-size: 14px; }
   .bt_page span {
-    padding: 0 15px; }
+    padding: 0 15px;
+    cursor: pointer; }
   .bt_page input {
     width: 45px;
     height: 28px;
@@ -2099,11 +2135,15 @@ a {
     margin-left: 0; }
     .nav-popup-list li:hover span {
       color: #2ea39d; }
+    .nav-popup-list li:hover a {
+      color: #2ea39d; }
     .nav-popup-list li:last-child {
       border-bottom: none; }
     .nav-popup-list li span {
       font-size: 14px;
       color: #333; }
+    .nav-popup-list li.active a {
+      color: #2ea39d; }
 
 .cart {
   width: 0;
@@ -2214,9 +2254,10 @@ a {
   overflow: hidden; }
   .solve_box.active {
     height: 100%; }
-
-.solve_box a {
-  color: #a1a3af; }
+  .solve_box li a {
+    color: #a1a3af !important; }
+  .solve_box li.active a {
+    color: #2ea39d !important; }
 
 .skill_pic_phone {
   display: none; }
@@ -2304,7 +2345,8 @@ a {
     background-image: url(../images/index_banner_phone.png); }
 
   .index_title h2 {
-    font-size: 0.96rem; }
+    font-size: 0.96rem;
+    margin-bottom: 0; }
   .index_title h3 {
     font-size: 0.8rem; }
 
@@ -2315,14 +2357,14 @@ a {
     margin-top: 1.4666666667rem; }
 
   .list_item {
-    padding-bottom: 1.8666666667rem; }
+    padding: 0 0 1.8666666667rem; }
     .list_item h4 {
       font-size: 0.7466666667rem; }
     .list_item p {
       font-size: 0.8rem; }
 
   .bt_solve {
-    padding: 0 1.3333333333rem; }
+    padding: 0.8rem 1.3333333333rem 0; }
     .bt_solve h2 {
       font-size: 0.8533333333rem; }
 
@@ -2730,4 +2772,12 @@ a {
   .recruit_info h2 {
     font-size: 0.96rem; }
   .recruit_info h3 {
-    font-size: 0.8rem; } }
+    font-size: 0.8rem; }
+
+  .companyNews_pic {
+    width: 6.3466666667rem;
+    height: 4.5333333333rem;
+    overflow: hidden; }
+    .companyNews_pic img {
+      width: 100%;
+      min-height: 4.5333333333rem; } }
