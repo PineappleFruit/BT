@@ -80,8 +80,16 @@
   width: 0.5333333333rem;
   height: 0.2933333333rem;
   background-image: url(../images/nav_arrow.png);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
   transform: rotateX(180deg); }
   .icon_arrow_phone.active {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    -ms-transform: rotateX(0);
     transform: rotateX(0); }
 
 .solve_box {

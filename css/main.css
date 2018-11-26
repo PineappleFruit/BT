@@ -1300,6 +1300,9 @@ table {
     left: 0;
     background-color: rgba(46, 163, 157, 0.46);
     opacity: 0;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
     transition: all 0.6s; }
   .bt_class:hover:before, .bt_school:hover:before {
     content: '';
@@ -1549,6 +1552,10 @@ table {
   .skill_item:hover {
     box-shadow: 0 0 30px rgba(9, 9, 9, 0.1); }
     .skill_item:hover .skill_pic img {
+      -webkit-transform: scale(1.02);
+      -moz-transform: scale(1.02);
+      -o-transform: scale(1.02);
+      -ms-transform: scale(1.02);
       transform: scale(1.02); }
 
 .skill_pic {
@@ -1558,6 +1565,9 @@ table {
   .skill_pic img {
     width: 100%;
     min-height: 300px;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
     transition: all 0.6s; }
 
 .skill_txt {
@@ -1660,6 +1670,9 @@ table {
   .companyNews_pic img {
     width: 100%;
     min-height: 168px;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
     transition: all 0.6s; }
 
 .news_time {
@@ -1888,7 +1901,8 @@ body {
   background: #fff;
   min-width: 1200px;
   position: relative;
-  font-size: 0; }
+  font-size: 0;
+  overflow-x: hidden; }
 
 .warp {
   width: 1200px;
@@ -1946,19 +1960,39 @@ a {
   height: 599px;
   background-image: url(../images/index_banner.png);
   width: 100%;
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2);
   animation: mymove 10s;
   -webkit-animation: mymove 10s; }
 
 @keyframes mymove {
   0% {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
     transform: scale(1, 1); }
   100% {
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
     transform: scale(1.2, 1.2); } }
 @-webkit-keyframes mymove {
   0% {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
     transform: scale(1, 1); }
   100% {
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
     transform: scale(1.2, 1.2); } }
 .logo {
   font-size: 0; }
@@ -2074,6 +2108,9 @@ a {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   text-align: center;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
   transition: all 0.6s;
   font-size: 14px; }
   .blue_btn:hover {
@@ -2118,6 +2155,9 @@ a {
   z-index: 50;
   width: 184px;
   opacity: 0;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
   transition: all .3s; }
 
 .nav-popup {
@@ -2245,8 +2285,16 @@ a {
   width: 0.5333333333rem;
   height: 0.2933333333rem;
   background-image: url(../images/nav_arrow.png);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
   transform: rotateX(180deg); }
   .icon_arrow_phone.active {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    -ms-transform: rotateX(0);
     transform: rotateX(0); }
 
 .solve_box {

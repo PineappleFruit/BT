@@ -2,16 +2,14 @@ $(function(){
 	//招聘
 	$(".work_item").each(function(index){
 		var _this = $(this);
-		var off = false
 		_this.click(function(){
-			off = !off
 			if(index == 0){
 				return
 			}
-			if(off){
-				_this.addClass('active').siblings().removeClass('active')
+			if(_this.hasClass('active')){
+				_this.removeClass('active').siblings().removeClass('active')
 			}else{
-				_this.removeClass('active')
+				_this.addClass('active').siblings().removeClass('active')
 			}
 		})
 	})

@@ -91,6 +91,9 @@
         left: 0;
         background-color: rgba(46,163,157,0.46);
         opacity: 0;
+        -moz-transition: all 0.6s; 
+        -webkit-transition: all 0.6s; 
+        -o-transition: all 0.6s; 
         transition: all 0.6s; 
     }
     &:hover{
@@ -366,6 +369,10 @@
         box-shadow: 0 0 30px rgba(9,9,9,0.1);
         .skill_pic{
             img{
+                -webkit-transform: scale(1.02);
+                -moz-transform: scale(1.02);
+                -o-transform : scale(1.02);
+                -ms-transform : scale(1.02);
                 transform: scale(1.02);
             }
         }
@@ -379,6 +386,9 @@
     img{
         width: 100%;
         min-height: 300px;
+        -moz-transition: all 0.6s; 
+        -webkit-transition: all 0.6s; 
+        -o-transition: all 0.6s; 
         transition: all 0.6s;
     }
 }
@@ -495,6 +505,9 @@
     img{
         width: 100%;
         min-height: 168px;
+        -moz-transition: all 0.6s; 
+        -webkit-transition: all 0.6s; 
+        -o-transition: all 0.6s; 
         transition: all 0.6s;
     }
 }
@@ -760,6 +773,7 @@
     line-height: 28px;
     color: #333;
     height: 0;
+//  display: none;
     h4{
         font-weight: bold;
     }

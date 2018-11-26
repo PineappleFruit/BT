@@ -97,9 +97,17 @@ $r: 1/16/(750/320);
     width: r(20);
     height: r(11);
     background-image: url(../images/nav_arrow.png);
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -o-transform : rotateX(180deg);
+    -ms-transform : rotateX(180deg);
     transform: rotateX(180deg);
    
     &.active{
+        -webkit-transform: rotateX(0);
+        -moz-transform: rotateX(0);
+        -o-transform : rotateX(0);
+        -ms-transform : rotateX(0);
         transform: rotateX(0);
         
     }
